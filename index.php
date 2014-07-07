@@ -24,11 +24,13 @@ if($_GET['action'] != ''){
 			$sql = "SELECT * FROM msg ORDER BY id desc";
 			$data = $db->selectRecords($sql);
 			include('view/show.php');
+			echo "Hello";
 	}
 }else{
 	$sql = "SELECT * FROM msg ORDER BY id desc";
 	$data = $db->selectRecords($sql);
 	include('view/show.php');
+	echo "Hello";
 }
 include('view/footer.php');
 ?>
